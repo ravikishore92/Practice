@@ -7,7 +7,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-
+import SimpleImageSlider from "react-simple-image-slider";
+const images = [
+  { url: "slide1.jpg" },
+  { url: "slide2.webp" },
+  { url: "slide3.png" },
+  
+];
 function App() {
   const [currentVideoId,setCurrentVideoId] = useState('bm0OyhwFDuY');
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -41,19 +47,6 @@ function App() {
         <MenuItem onClick={handleClose}>Logout</MenuItem>
       </Menu>
          
-       
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
       {/* <div className="App">
         <div className="flex1">
@@ -63,14 +56,23 @@ function App() {
         <Sidebar videoHandler={handleVideoClick}></Sidebar>
         </div>
       </div> */}
+      <div>
+      <SimpleImageSlider
+        width={1535}
+        height={604}
+        slideDuration={0.5}
+        autoPlay={true}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+        onClick = {(idx, event)}
+      />
+      </div>
       
 
     </div> 
 
-    // <div>
-    //   <Courses></Courses>
-    //   <Course1></Course1>
-    // </div>
+    
   );
 }
 
