@@ -8,6 +8,8 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import SimpleImageSlider from "react-simple-image-slider";
+import Content from './content/Content';
+import Footer from './footer/Footer';
 const images = [
   { url: "slide1.jpg" },
   { url: "slide2.webp" },
@@ -32,7 +34,7 @@ function App() {
    return (
     <div >
       <div className='nav'>
-        <img src='rkr1.jpg' className='img'></img>
+        <img src='rkr1.jpg' className='img5'></img>
         <div className='subject'>Java Spring Framework 6 with Spring Boot 3 - RK</div>
          <div className='flexbox'  onClick={handleClick}><AccountCircleIcon style={{fontSize:'30px'}}></AccountCircleIcon><div className='name'>Ravi Kishore</div><KeyboardArrowDownIcon></KeyboardArrowDownIcon></div>
          <Menu
@@ -56,20 +58,20 @@ function App() {
         <Sidebar videoHandler={handleVideoClick}></Sidebar>
         </div>
       </div> */}
-      <div>
+      <div className='slide'>
       <SimpleImageSlider
-        width={1535}
+        width={1519}
         height={604}
         slideDuration={0.5}
         autoPlay={true}
         images={images}
         showBullets={true}
         showNavs={true}
-        onClick = {(idx, event)}
+       //i will the code here when i wany
       />
       </div>
-      
-
+       <Content></Content>
+       <Footer></Footer>
     </div> 
 
     
