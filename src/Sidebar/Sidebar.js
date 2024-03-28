@@ -84,7 +84,6 @@ function Section({section,items,onVideo}) {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={{ backgroundColor: (hoveredItemIndex === index) || (clickedItemIndex === index) ? '#d1d7dc' : 'white',cursor: 'pointer' }}
-                
               >
                 <div className="gap" onClick={() =>onClickDo(item.videoId,index)}>
                   <input type='checkbox' className='checkbox'/>

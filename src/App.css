@@ -3,12 +3,12 @@
     display: flex;
     height: 100vh;
 }
-.flex1
+.flexone
 {
     flex: 0 0 75%; /* Take up 80% of the available space */
    
 }
-.flex2
+.flextwo
 {
    
     flex: 0 0 25%; /* Take up 80% of the available space */
@@ -16,68 +16,8 @@
     overflow-y:auto;
     background-color: aliceblue;
 }
-.nav
-{
-    height: 60px;
-    width: 100%;
-    background-color: #2d2f31;
-    display: flex;
-}
-.nav2
-{
-    display: flex;
-    height: 60px;
-    background-color: #2d2f31;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    
-}
-.bttn1
-{
-  text-align: center;
-   width: 150px;
-   height: 100%;
-   cursor: pointer;
-}
-.bttnhover{
-    text-align: center;
-   width: 150px;
-   height: 100%;
-    background-color: #fff;
-    color: #2d2f31;
-    cursor: pointer;
-}
 
 
 
 
-
-.img5
-{
-    margin-left: 30px;
-}
-.subject
-{
-    color: #fff;
-    font-size: 15px;
-    margin-top: 18px;
-    margin-left: 10px;
-}
-.flexbox{
-    display: flex;
-    color: white;
-    margin-left: auto;
-    margin-top: 14px;
-    margin-right: 100px;
-    cursor: pointer;
-}
-.name
-{
-    margin-top: 5px;
-}
-.item
-{
-    width: 200px;
-}
 

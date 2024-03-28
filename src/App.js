@@ -4,13 +4,11 @@ import Video from './video/Video';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Sidebar from './Sidebar/Sidebar';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import SimpleImageSlider from "react-simple-image-slider";
-import Content from './content/Content';
 import Footer from './footer/Footer';
+import Navbar from './navbar/Navbar';
+import Content from './content/Content';
+import Subjects from './Subjects/Subjects';
 const images = [
   { url: "slide1.jpg" },
   { url: "slide2.webp" },
@@ -19,79 +17,25 @@ const images = [
 ];
 function App() {
   const [currentVideoId,setCurrentVideoId] = useState('bm0OyhwFDuY');
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const [isHovered, setIsHovered] = useState(false);
-  const [hoverId,setHoverId] = useState();
-
-  const handleMouseEnter = (id) => {
-    setIsHovered(true);
-    setHoverId(id);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+ 
+ 
   const handleVideoClick = (id) => {
     setCurrentVideoId(id);
   };
 
    return (
     <div >
-      <div className='nav'>
-          <img src='rkr1.jpg' className='img5'></img>
-          <div className='subject'>Java Spring Framework 6 with Spring Boot 3 - RK</div>
-          <div className='flexbox'  onClick={handleClick}><AccountCircleIcon style={{fontSize:'30px'}}></AccountCircleIcon><div className='name'>Ravi Kishore</div><KeyboardArrowDownIcon></KeyboardArrowDownIcon></div>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-          >
-          <MenuItem onClick={handleClose} className='item'>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>Courses</MenuItem>
-          <MenuItem onClick={handleClose}>Test Series</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
-        </Menu>
-         
-      </div>
-      <div className='nav2'>
-         <div 
-            onMouseEnter={() =>handleMouseEnter(1)}
-            onMouseLeave={handleMouseLeave}
-            className={isHovered && (hoverId==1)? 'bttnhover' : 'bttn1'}
-            >
-            <p>Courses</p>
-          </div>
-         <div 
-            onMouseEnter={() =>handleMouseEnter(2)}
-            onMouseLeave={handleMouseLeave}
-            className={isHovered && (hoverId==2) ? 'bttnhover' : 'bttn1'}
-            ><p>Test Series</p></div>
-         <div
-          onMouseEnter={() =>handleMouseEnter(3)}
-            onMouseLeave={handleMouseLeave}
-            className={isHovered && (hoverId==3) ? 'bttnhover' : 'bttn1'}><p>My Report</p></div>
-      </div>
-
-
-
+      
+      <Navbar></Navbar>
       {/* <div className="App">
-        <div className="flex1">
+        <div className="flexone">
         <Video presentVideoId={currentVideoId}></Video>
         </div>
-        <div className="flex2">
+        <div className="flextwo">
         <Sidebar videoHandler={handleVideoClick}></Sidebar>
         </div>
       </div> */}
-      <div className='slide'>
+      {/* <div className='slide'>
       <SimpleImageSlider
         width={1519}
         height={604}
@@ -103,7 +47,8 @@ function App() {
        //i will the code here when i wany
       />
       </div>
-       <Content></Content>
+       <Content></Content> */}
+       <Subjects></Subjects>
        <Footer></Footer>
     </div> 
 

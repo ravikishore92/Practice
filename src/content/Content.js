@@ -90,7 +90,7 @@ export default function Content()
                 <div className='smallbox'>
                      <img src='person2.png'></img>
                     <div className='sodi'>I had very good experience learning from RKR IT. I had enrolled in Full Stack Java Course, So based on my personal experience trainers at RKR IT are highly experienced trainers who possess many years of industry experience.</div>
-                    <div style={{marginTop:'20px'}}>- Ravi</div>
+                    <div style={{marginTop:'20px'}}>- Lakshmi</div>
                 </div>
                 <div className='smallbox'>
                      <img src='person3.png'></img>
