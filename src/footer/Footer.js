@@ -5,9 +5,21 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 function Footer() {
+   
+    const [isHoveredIndex,setIsHoveredIndex] = React.useState();
     const arr1 = ['Home','About Us','Contact Us','Get Started'];
     const arr2 = ['App design','Web design','Logo design','Banner design'];
-    const arr3 = ['Profile','My Account','Logo design','Banner design'];
+    const arr3 = ['Profile','My Account','Preferences','Purchase'];
+    const arr4 = ['HTMl & CSS','JavaScript','SpringBoot','Angular'];
+
+    const handleMouseEnter = (index) => {
+       
+        setIsHoveredIndex(index);
+      };
+    
+    const  handleMouseLeave = () => {
+        
+      };
 
 
   return (
@@ -24,31 +36,47 @@ function Footer() {
     <div className='flex'>
     <div>
         <div className='com'>Company</div>
-        <div className='Gs'>Home</div>
-        <div className='Gs'>Contact Us</div>
-        <div className='Gs'>About Us</div>
-        <div className='Gs'>Get Started</div>
+            {arr1.map((ele, index) => (
+                <div 
+                 key={index}
+                 className={`Gs ${isHoveredIndex === index ? 'hovered' : ''}`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                 >{ele}</div>
+            ))}
     </div>
     <div>
         <div className='ser'>Services</div>
-        <div className='Ad'>App design</div>
-        <div className='Ad'>Web design</div>
-        <div className='Ad'>Logo design</div>
-        <div className='Ad'>Banner design</div>
+        {arr2.map((ele, index) => (
+                <div 
+                key={index}
+                className={`Ad ${isHoveredIndex === index ? 'hovered' : ''}`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                >{ele}</div>
+            ))}
     </div>
     <div>
          <div className='Acc'>Account</div>
-         <div className='Pu'>Profile</div>
-         <div className='Pu'>My account</div>
-         <div className='Pu'>cd </div>
-         <div className='Pu'>Purchase</div>
+         {arr3.map((ele, index) => (
+                <div 
+                 key={index}
+                 className={`Pu ${isHoveredIndex === index ? 'hovered' : ''}`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                 >{ele}</div>
+            ))}
     </div>
     <div>
         <div className='Cou'>Courses</div>
-        <div className='Ps'>HTML & CSS</div>
-        <div className='Ps'>JavaScript</div>
-        <div className='Ps'>Photography</div>
-        <div className='Ps'>Photoshop</div>
+        {arr4.map((ele, index) => (
+                <div 
+                 key={index}
+                 className={`Ps ${isHoveredIndex === index ? 'hovered' : ''}`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                 >{ele}</div>
+            ))}
     </div>
     <div>
         <div className='Sub'>Subscribe</div>

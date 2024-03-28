@@ -64,7 +64,12 @@
     padding-top: 10px;
     padding-left: 30px;
     font-size: small;
+    cursor: pointer;
 }
+.Gs:hover {
+    font-size: medium;
+    text-decoration: underline;
+   }
  .ser 
 {
     color:whitesmoke;
@@ -78,7 +83,14 @@
     padding-top: 10px;
     padding-left: 100px;
     font-size: small;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.Ad:hover {
+   font-size: medium;
+   text-decoration: underline;
+  }
 
 
 .Acc 
@@ -96,7 +108,12 @@
     padding-top: 10px;
     padding-left: 100px;
     font-size: small;
+    cursor: pointer;
 }
+.Pu:hover {
+    font-size: medium;
+    text-decoration: underline;
+   }
 .Cou
 {
     color:whitesmoke;
@@ -112,7 +129,12 @@
     padding-top: 10px;
     padding-left: 100px;
     font-size: small;
+    cursor: pointer;
 }
+.Ps:hover {
+    font-size: medium;
+    text-decoration: underline;
+   }
 .Sub 
 {
     color:whitesmoke;
