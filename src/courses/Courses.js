@@ -1,84 +1,100 @@
+
 import './Courses.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-//#0f5298
+
+const arr1=[
+   {
+      image:'java2.webp',
+      name:'Java Core'
+
+   },
+   {
+      image:'logo192.png',
+      name:'ReactJs'
+
+   }
+]
 export default function Courses()
 {
      return (
         <>
         <div>
-            <div className='title'>All Test Series</div>
-            <div className='title1'>Click to view Test Series and mock tests for all groups</div>
-            <div className='section'>
-                <div className='subject'>
-                    <div className='smallbox'></div>
-                    <img src="java2.webp" className='image' />
-                    <div className='sub1'>Java Core</div>
-                    <div className='view'>View All<ArrowForwardIosIcon style={{height:'17px',fontWeight:'700',marginLeft:'0px'}}></ArrowForwardIosIcon> </div>
+            <div className='c-title'>All Test Series</div>
+            <div className='c-title1'>Click to view Test Series and mock tests for all groups</div>
+            {arr1.map((ele, index) => (
+            <div className='c-section' key={index}>
+                <div className='c-subject'>
+                    <div className='c-smallbox'></div>
+                    <img src={ele.image} className='c-image' />
+                    <div className='c-sub1'>{ele.name}</div>
+                    <div className='c-view'>View All<ArrowForwardIosIcon style={{height:'17px',fontWeight:'700',marginLeft:'0px'}}></ArrowForwardIosIcon> </div>
                 </div>
                 <div style={{display:'flex',gap:'20px'}} >
                     <div className='card'>
-                        <img src="java2.webp" className='image1' />
-                        <div className='subjectname'>Java Core - 1</div>
-                         <div className="flex" style={{marginTop:'50px'}}>
+                        <img src={ele.image} className='c-image1' />
+                        <div className='c-subjectname'>{ele.name} - 1</div>
+                         <div className="c-flex" style={{marginTop:'50px'}}>
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Questions</div>
-                            <div className='value'>50</div>
+                            <div className='c-q1'>Questions</div>
+                            <div className='c-value'>50</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Time(mins)</div>
-                            <div className='value'>75</div>
+                            <div className='c-q1'>Time(mins)</div>
+                            <div className='c-value'>75</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Maximum Marks</div>
-                            <div className='value'>100</div>
+                            <div className='c-q1'>Maximum Marks</div>
+                            <div className='c-value'>100</div>
                          </div>
-                         <button className='btn'>ATTEMPT NOW</button>
+                         <button className='c-btn'>ATTEMPT NOW</button>
                     </div>
                     <div className='card'>
-                        <img src="java2.webp" className='image1' />
-                        <div className='subjectname'>Java Core - 2</div>
-                         <div className="flex" style={{marginTop:'50px'}}>
+                        <img src={ele.image} className='c-image1' />
+                        <div className='c-subjectname'>{ele.name} - 2</div>
+                         <div className="c-flex" style={{marginTop:'50px'}}>
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Questions</div>
-                            <div className='value'>50</div>
+                            <div className='c-q1'>Questions</div>
+                            <div className='c-value'>50</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Time(mins)</div>
-                            <div className='value'>75</div>
+                            <div className='c-q1'>Time(mins)</div>
+                            <div className='c-value'>75</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Maximum Marks</div>
-                            <div className='value'>100</div>
+                            <div className='c-q1'>Maximum Marks</div>
+                            <div className='c-value'>100</div>
                          </div>
-                         <button className='btn'>ATTEMPT NOW</button>
+                         <button className='c-btn'>ATTEMPT NOW</button>
                     </div>
                     <div className='card'>
-                        <img src="java2.webp" className='image1' />
-                        <div className='subjectname'>Java Core - 3</div>
-                         <div className="flex" style={{marginTop:'50px'}}>
+                        <img src={ele.image} className='c-image1' />
+                        <div className='c-subjectname'>{ele.name} - 3</div>
+                         <div className="c-flex" style={{marginTop:'50px'}}>
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Questions</div>
-                            <div className='value'>50</div>
+                            <div className='c-q1'>Questions</div>
+                            <div className='c-value'>50</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Time(mins)</div>
-                            <div className='value'>75</div>
+                            <div className='c-q1'>Time(mins)</div>
+                            <div className='c-value'>75</div>
                          </div>
-                         <div className="flex">
+                         <div className="c-flex">
                             <div style={{fontWeight:'900'}}>.</div>
-                            <div className='q1'>Maximum Marks</div>
-                            <div className='value'>100</div>
+                            <div className='c-q1'>Maximum Marks</div>
+                            <div className='c-value'>100</div>
                          </div>
-                         <button className='btn'>ATTEMPT NOW</button>
+                         <button className='c-btn'>ATTEMPT NOW</button>
                     </div>
                 </div>
             </div>
+            ))}
         </div>
+        
         </>
      );
 }

@@ -1,40 +1,40 @@
-.title
+.c-title
 {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
 }
-.title1
+.c-title1
 {
     text-align: center;
     margin-top: 10px;
 }
-.section
+.c-section
 {
     margin-left: 200px;
     margin-top: 100px;
 }
-.subject
+.c-subject
 {
     display: flex;
     height: 30px;
 }
-.image
+.c-image
 {
     width: 40px;
     height: 30px;
 }
-.smallbox{
+.c-smallbox{
     width: 9px;
     background-color: #0f5298;
 }
-.sub1
+.c-sub1
 {
     font-weight: 700;
     margin-top: 7px;
 }
-.view
+.c-view
 {
     color: #0f5298;
     font-weight: 600;
@@ -55,21 +55,21 @@
     margin-top: 20px;
     cursor: pointer;
 }
-.image1
+.c-image1
 {
     width: 50px;
     height: 50px;
     margin-top: 15px;
     margin-left: 80px;
 }
-.subjectname
+.c-subjectname
 {
     font-size: 17px;
     font-weight: 600;
     margin-left: 60px;
     margin-top: 10px;
 }
-.q1{
+.c-q1{
     margin-top: 5px;
     font-size: 17px;
     color: #666666;
@@ -78,12 +78,12 @@
     margin-left: 5px;
 
 }
-.flex
+.c-flex
 {
     display: flex;
     margin-left: 10px;
 }
-.value
+.c-value
 { margin-top: 7px;
     font-size: 17px;
     color: #666666;
@@ -92,7 +92,7 @@
     margin-left: auto;
     margin-right: 20px;
 }
-.btn{
+.c-btn{
     width: 200px;
     height: 50px;
     margin-left: 10px;

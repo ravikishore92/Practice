@@ -1,32 +1,32 @@
-.body
+.list-body
 {
     margin-top: 60px;
     margin-left: 170px;
 }
-.title
+.list-title
 {
     display: flex;
 }
-.image1
+.list-image1
 {
     width: 50px;
     height: 50px;
    
 }
-.sub
+.list-sub
 {
     font-size: 1.333rem;
     font-weight: 700;
     line-height: 1.667rem;
 
 }
-.subtitle
+.list-subtitle
 {
     color: #808080;
     font-size: 15px;
     margin-bottom: 50px;
 }
-.cardlist
+.list-cardlist
 {
     display: flex;
     gap: 50px;
@@ -41,7 +41,7 @@
     cursor: pointer;
 
 }
-.smallbox
+.list-smallbox
 {
     width:220px;
     height: 90px;
@@ -49,7 +49,7 @@
     background-color: #f6f6f6;
     margin-top: 10px;
 }
-.cardsub
+.list-cardsub
 {
     padding-top: 15px;
     font-size: 1.167rem;
@@ -61,7 +61,7 @@
 
     
 }
-.status
+.list-status
 {
     font-size: 13px;
     font-weight: 400;
@@ -70,7 +70,7 @@
     margin-left: 15px;
     margin-top: 40px;
 }
-.q1{
+.list-q1{
     margin-top: 10px;
     color: #808080;
     margin-left: 5px;
@@ -79,12 +79,12 @@
     
 
 }
-.flex
+.list-flex
 {
     display: flex;
     margin-left: 10px;
 }
-.value
+.list-value
 { margin-top: 7px;
     font-size: 13px;
     font-weight: 400;
@@ -92,7 +92,7 @@
     margin-left: auto;
     margin-right: 40px;
 }
-.unlockbtn
+.list-unlockbtn
 {
     display: flex;
      color: #0f5298;
@@ -100,7 +100,7 @@
      padding-top: 0px;
     cursor: pointer;
 }
-.lockname
+.list-lockname
 {
     margin-left: 80px;
     font-size: 1.167rem;
@@ -108,7 +108,7 @@
     line-height: 1.5rem;
     margin-right: 5px;
 }
-.hr
+.list-hr
 {
     width: 220px;
     margin-top: 20px;

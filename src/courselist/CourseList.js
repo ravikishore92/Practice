@@ -6,43 +6,43 @@ export default function CourseList()
 {      const arr=[1,2,3,4,5,6,7,8,9,10];
         return (
             <>
-            <div className='body'>
-                <div className='title'>
-                    <img src="java2.webp" className='image1' />
+            <div className='list-body'>
+                <div className='list-title'>
+                    <img src="java2.webp" className='list-image1' />
                     <div>
-                        <div className='sub'>Java Programming Mcqs Mock Tests</div>
-                        <div className='subtitle'>10 Mock Tests</div>
+                        <div className='list-sub'>Java Programming Mcqs Mock Tests</div>
+                        <div className='list-subtitle'>10 Mock Tests</div>
                     </div>
                 </div>
                 
-                    <div className='cardlist'>
+                    <div className='list-cardlist'>
                         { arr.map((item, index) => (
                         <div className='card' key={index}>
                             {(index<8) ?
-                            <div className='cardsub'>Java Mock Test - {item}</div>:<div className='cardsub'>Java Grand Test - {item}</div>
+                            <div className='list-cardsub'>Java Mock Test - {item}</div>:<div className='list-cardsub'>Java Grand Test - {item}</div>
                             }
-                            <div className='status'>Available for Free</div>
-                            <div className='smallbox'>
-                                <div className="flex" style={{marginTop:'30px'}}>
-                                    <div className='q1'>Questions</div>
-                                    <div className='value'>50</div>
+                            <div className='list-status'>Available for Free</div>
+                            <div className='list-smallbox'>
+                                <div className="list-flex" style={{marginTop:'30px'}}>
+                                    <div className='list-q1'>Questions</div>
+                                    <div className='list-value'>50</div>
                                 </div>
-                                <div className="flex">
-                                    <div className='q1'>Time</div>
-                                    <div className='value'>75(mins)</div>
+                                <div className="list-flex">
+                                    <div className='list-q1'>Time</div>
+                                    <div className='list-value'>75(mins)</div>
                                 </div>
-                                <div className="flex">
-                                    <div className='q1'>Maximum Marks</div>
-                                    <div className='value'>100</div>
+                                <div className="list-flex">
+                                    <div className='list-q1'>Maximum Marks</div>
+                                    <div className='list-value'>100</div>
                                 </div>
                             </div>
-                            <hr className='hr'/>
+                            <hr className='list-hr'/>
                             {(index>=5) ? 
-                            <div className='unlockbtn'>
-                                <div className='lockname'>Unlock</div>
+                            <div className='list-unlockbtn'>
+                                <div className='list-lockname'>Unlock</div>
                                 <LockOpenIcon style={{height:'15px',marginTop:'5px'}}></LockOpenIcon>
-                            </div> : <div className='unlockbtn'>
-                                <div className='lockname' style={{marginLeft:'100px'}}>Free</div>
+                            </div> : <div className='list-unlockbtn'>
+                                <div className='list-lockname' style={{marginLeft:'100px'}}>Free</div>
                                 
                             </div>}
                         </div>

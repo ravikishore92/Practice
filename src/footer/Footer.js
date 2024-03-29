@@ -24,6 +24,7 @@ function Footer() {
 
   return (
     <>
+  <div style={{marginTop:'100px'}}>
     <div className='one'>
     <div className='two'>
         <div className='three'>RKR IT</div>
@@ -90,6 +91,7 @@ function Footer() {
         <div className='bottomtwo'>All rights reserved</div>
         <div className='bottomthree'>Privacy Policy</div>
         <div className='bottomfour'>Terms & Conditions</div>
+    </div>
     </div>
     </>
   )
